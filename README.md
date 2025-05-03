@@ -125,3 +125,34 @@ You need to run both the backend and frontend servers concurrently.
     *   Open your web browser and navigate to `http://localhost:3000` (or the port specified by the frontend development server).
 
 ## 📁 Project Structure (Simplified)
+
+```
+nextlevel-ai-planner/
+├── backend/
+│   ├── data/             # Stores user data (JSON files)
+│   │   └── users/
+│   ├── node_modules/     # Backend dependencies
+│   ├── routes/           # API route definitions
+│   ├── controllers/      # Request handling logic
+│   ├── services/         # Business logic (e.g., AI interaction)
+│   ├── utils/            # Utility functions
+│   ├── .env              # Environment variables (API keys, secrets) - **DO NOT COMMIT**
+│   ├── server.js         # Main backend server entry point
+│   └── package.json      # Backend dependencies and scripts
+│
+├── frontend/
+│   ├── node_modules/     # Frontend dependencies
+│   ├── public/           # Static assets (index.html, images)
+│   ├── src/              # React application source code
+│   │   ├── components/   # Reusable UI components
+│   │   ├── pages/        # Page-level components
+│   │   ├── services/     # Frontend API interaction logic
+│   │   ├── contexts/     # React contexts (e.g., AuthContext)
+│   │   ├── assets/       # Frontend-specific assets (CSS, fonts)
+│   │   ├── App.js        # Main application component
+│   │   └── index.js      # Frontend entry point
+│   └── package.json      # Frontend dependencies and scripts
+│
+├── .gitignore            # Specifies intentionally untracked files
+└── README.md             # Project documentation (this file)
+```
